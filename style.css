@@ -18,26 +18,34 @@ body {
     min-height: 100vh;
 }
 
-header {
-    width: 100%;
-    padding: 16px;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
+    padding: 16px 22px;
 }
 
-.nav-profile {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    background-image: url(https://lh3.googleusercontent.com/ogw/ADGmqu-CFHvTWc390g9eopfBIAxFeQxfFm9NWfsgAoIzByA=s64-c-mo);
+.nav-profile img {
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    border: 0;
+    display: block;
+    margin: -2px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.profile-frame {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
 }
 
 .app-logo {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     position: relative;
 }
 
@@ -48,18 +56,28 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: rgba(0,0,0,.55);
   }
 
 .nav-list {
     display: flex;
     list-style: none;
     align-items: center;
+    font-size: 13px;
+
+}
+
+.nav-list li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.nav-list a {
+    color: #000;
+    opacity: 0.75;
 }
 
 a {
-    color: rgba(0,0,0,.54);
     text-decoration: none;
-    font-size: 14px;
 }
 
 main {
@@ -69,6 +87,11 @@ main {
     align-items: center;
     flex: 1;
     margin-top: 89px;
+}
+
+p {
+    margin-top: 32px;
+    font-size: 13px;
 }
 
 .search-container {
