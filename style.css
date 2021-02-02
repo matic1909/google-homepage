@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #202124;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 16px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-profile {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(https://lh3.googleusercontent.com/ogw/ADGmqu-CFHvTWc390g9eopfBIAxFeQxfFm9NWfsgAoIzByA=s64-c-mo);
+}
+
+.app-logo {
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+.app-logo svg {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+a {
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 89px;
+}
+
+.search-container {
+    padding-top: 6px;
+    background-color: #fff;
+    max-width: 584px;
+    width: 584px;
+    height: 44px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 8px 0 14px;
+}
+
+.search-icon {
+    height: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    margin-right: 7px;
+}
+
+.search-input {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    outline: none;
+    flex: 100%;
+    font-size: 16px;
+}
+
+.glass-icon {
+    height: 20px;
+    width: 20px;
+    fill: #9aa0a6;
+}
+
+.mic-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.buttons {
+    padding-top: 18px;
+}
+
+.buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    min-width: 54px;
+    line-height: 27px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;   
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+.footer-country {
+    color: rgba(0,0,0,.54);
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+}
